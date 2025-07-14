@@ -52,3 +52,83 @@ options:
   --password PASSWORD   MoviesRemastered password (optional, will ask if not given)
   --poster {normal,hd}  Choose poster resolution to save (defaults to normal)
 ```
+
+# For Python Newbies in Windows:
+
+You can follow these steps, OR grab the zip and run the setup_and_run.bat
+
+## 🖥️ How to Install and Run on Windows
+
+This guide walks you through installing Python, setting up the environment, and running the script on Windows.
+
+### 📦 Prerequisites
+
+- Windows 10 or 11
+- Internet connection
+- Basic familiarity with the Command Prompt
+
+---
+
+### 1️⃣ Install Python
+
+1. Download Python from: [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/)
+2. Run the installer:
+   - ✅ Check **"Add Python to PATH"**
+   - Click **Install Now**
+3. Verify installation in Command Prompt:
+   ```bash
+   python --version
+   ```
+
+### 2️⃣ (Optional) Install Git to clone the repository:
+Download Git from: https://git-scm.com/download/win
+Install with default options.
+
+### 3️⃣ Download the Code
+#### Option A (after step 2): Clone with Git
+```bash
+git clone https://github.com/scruffynerf/MRDBFaneditNfo.git
+cd MRDBFaneditNfo
+```
+
+#### Option B (no git needed): Download ZIP
+
+Go to `https://github.com/scruffynerf/MRDBFaneditNfo`
+
+Click Code > Download ZIP
+
+Extract the ZIP and open a terminal in the folder.
+
+### 4️⃣ (Optional, recommended) Create a Virtual Environment
+In the project folder:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 5️⃣ Install Required Python Packages
+Make sure you're in the project directory, then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6️⃣ Run the Script
+To run the script:
+
+```bash
+python MRDB_fanedit_nfo_maker.py --help
+```
+
+Refer to the rest of the README for usage.
+
+# ✅ Done!
+You are now set up to run MRDBFaneditNfo on Windows.
+
+# ⚙️ ALTERNATIVELY: One-Click Setup Script
+You can use the included setup_and_run.bat script to automatically:
+- Create a virtual environment
+- Install dependencies
+- Run the program
+Just double-click the .bat file or run from the Command Prompt
